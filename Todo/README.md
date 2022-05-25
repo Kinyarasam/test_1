@@ -5,3 +5,10 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+
+# Getting started.
+
+## Tailwindcss.
+
+For this project, Tailwindcss is used.
+To get started on Tailwindcss, You can check out the `[official docs](https://tailwindcss.com/docs/installation)` by following the link provided

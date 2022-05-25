@@ -11,4 +11,4 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ## Tailwindcss.
 
 For this project, Tailwindcss is used.
-To get started on Tailwindcss, You can check out the `[official docs](https://tailwindcss.com/docs/installation)` by following the link provided
+To get started on Tailwindcss, You can check out the [`official docs`](https://tailwindcss.com/docs/installation) by following the link provided

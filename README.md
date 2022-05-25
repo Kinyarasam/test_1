@@ -1,14 +1,14 @@
-# Who am I?
-**KinyaraSam** Here. 
+# Todo App
 
-* Happy to learn *software Engineering.*
+This Repository contains code in Vuejs.
+It is an implementation of a todo App.
 
+# Getting Started
 
-[click the link above to find my Repo](https://github.com/Kinyarasam/alx-pre_course "github")
+we will create a new vue project using vite.
 
-
-
+`npm init vite Todo`
 
 ~~~~
-print('Hello, there... I just opened my first Repo')
+console.log('Todo App')
 ~~~~

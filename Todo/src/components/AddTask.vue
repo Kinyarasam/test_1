@@ -4,7 +4,7 @@
             <div>
                 <label for="task">Add Task:</label>
                 <input 
-                    v-model="task"
+                    v-model="title"
                     name="Task" 
                     type="text"
                     placeholder="Add New Task"
@@ -52,7 +52,7 @@ export default {
     name: 'AddTask',
     data() {
         return {
-            task: '',
+            title: '',
             day: '',
             description: '',
             completed: false
@@ -62,8 +62,21 @@ export default {
         onSubmit(data) {
             data.preventDefault()
 
+            if (!this.title) {
+                alert('Please add a task')
+                console.alert('Invalid Input')
+            }
+            else if (!this.day) {
+                alert('Please add a day')
+                console.alert('Invalid Input')
+            }
+            else if (!this.description) {
+                alert('Please add a Description')
+                console.alert('Invalid Input')
+            }
+
             const newTask = {
-                task: this.task,
+                title: this.title,
                 day: this.day,
                 description: this.description,
                 completed: this.completed

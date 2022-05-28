@@ -1,8 +1,8 @@
 <template>
-    <div class="bg-black text-[#d4d4d4] h-screen">
-        Home View
+    <div class="bg-black text-[#d4d4d4] h-screen pt-2">
+        
         <div class="mx-8 my-4 p-4 flex justify-center bg-[#2a2a2a] rounded shadow-lg shadow-[#6a6a6a]">
-            <div>
+            <div class="">
                 <div>
                     <AddTask @add_task="Add_Task" />
                 </div>
@@ -15,19 +15,22 @@
 </template>
 
 <script>
-import AddTask from './AddTask.vue'
-import ShowTasks from './ShowTask.vue'
+import AddTask from '../components/AddTask.vue'
+import ShowTasks from '../components/ShowTask.vue'
 
 export default {
     name: 'Home',
     components: {
-        AddTask
+        AddTask,
+        ShowTasks
     },
     data() {
-        return {}
+        return {
+            tasks: [],
+        }
     },
     methods: {
-        async addTask () {
+        async Add_Task () {
             const res = await fetch('api/tasks', {
                 method: 'POST',
                 header: {

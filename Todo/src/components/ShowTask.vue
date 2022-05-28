@@ -11,8 +11,11 @@ import Task from './Task.vue'
 
 export default {
     name: 'ShowTasks',
+    props: {
+        tasks: Array
+    },
     components: {
-        Task
+        Task,
     }
 
 }
